@@ -44,6 +44,7 @@
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#services">Services</a></li>
@@ -212,84 +213,106 @@
     <!-- Skills Section -->
     <section id="skills" class="skills section">
 
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Technical Toolkit</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>A practical toolkit for building reliable mobile products, connected systems, and AI-assisted experiences.</p>
+      </div>
+
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="row g-4 skills-animation">
+        <div class="row g-4">
 
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="skill-box">
-              <h3>Flutter (Dart)</h3>
-              <p>
-                <ul>
-                <li><b>APIs & Database:</b> REST, GraphQL, Firebase, MS SQL, SQLite.</li>
-                <li><b>State Management:</b> BLoC (Cubit), GetX, Provider, Riverpod.</li>
-                <li><b>Networking:</b> Dio, Http, Redis, Socket Programming.</li>
-                <li><b>Data:</b> SQFlite, Hive, Shared Preferences.</li>
-                <li><b>Performance:</b> Memory Profiling, ANR Handling, Lazy Loading.</li>
-                </ul>
-                </p>
-              <span class="text-end d-block">90%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
-            <div class="skill-box">
-              <h3>Android SDK</h3>
-              <p>
-                <ul>
-                  <li>ViewModel, LiveData, Dagger Hilt, Room, Retrofit, Flow, Coroutines, UI (XML & Jetpack Compose).</li>
-                  <li>Google Maps, Push Notifications, Background Services.</li>
-                  <li>Payment gateway, QR code, USB, Bluetooth Integration.</li>
-                  <li>Microsoft and Firebase SDK Integration.</li>
-                  <li>WebRTC and XMPP (OpenFire).</li>
-                </ul>
-                </p>
-              <span class="text-end d-block">80%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-            <div class="skill-box">
-              <h3>Others</h3>
-              <p>
-                <ul>
-                  <li><b>CI/CD:</b> Fastlane, GitHub Actions, Bitbucket Pipelines.</li>
-                  <li><b>Testing:</b> Unit, Widget and Integration Testing (Flutter Test).</li>
-                  <li><b>Architecture:</b> MVVM and Clean Architecture.</li>
-                  <li><b>Management:</b> Agile Methodologies, Requirement Analysis, and Client Communication.</li>
-                  <li><b>Security:</b> OWASP MASVS, SSL/TLS, GDPR Compliance.</li>
-                </ul>
-                </p>
-              <span class="text-end d-block">80%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
-            <div class="skill-box">
-              <h3>Tools</h3>
-              <p>
-                <ul>
-                  <li><b>Azure:</b> Application Security and Authentication.</li>
-                  <li><b>Jira:</b> Agile Sprint Planning and Project Management.</li>
-                  <li><b>Figma and Adobe XD:</b> Application Data Flow and UI/UX Design.</li>
-                  <li><b>ChatGPT:</b> AI Insights and Support.</li>
-                  <li><b>Power Point and Power BI:</b> Presentation and Data Management.</li>
-                  <li><b>KOBO:</b> Data Collection Tool.</li>
-                </ul>
-              </p>
-              <span class="text-end d-block">70%</span>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              <div class="skill-heading">
+                <span class="skill-icon"><i class="bi bi-phone"></i></span>
+                <div>
+                  <h3>Mobile Engineering</h3>
+                  <p>Cross-platform and native foundations for production mobile applications.</p>
                 </div>
+              </div>
+              <div class="skill-tags">
+                <span>Flutter</span><span>Dart</span><span>Android</span><span>Kotlin</span><span>Java</span><span>Jetpack Compose</span><span>BLoC</span><span>Coroutines</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-box">
+              <div class="skill-heading">
+                <span class="skill-icon"><i class="bi bi-layers"></i></span>
+                <div>
+                  <h3>Architecture &amp; Reliability</h3>
+                  <p>Maintainable foundations designed for scale, offline use, and real-device performance.</p>
+                </div>
+              </div>
+              <div class="skill-tags">
+                <span>Clean Architecture</span><span>MVVM</span><span>Room</span><span>SQLite</span><span>REST APIs</span><span>Firebase</span><span>DI</span><span>ANR handling</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="skill-box">
+              <div class="skill-heading">
+                <span class="skill-icon"><i class="bi bi-bezier2"></i></span>
+                <div>
+                  <h3>Connected Product Systems</h3>
+                  <p>Mobile experiences that connect people, devices, services, and field operations.</p>
+                </div>
+              </div>
+              <div class="skill-tags">
+                <span>BLE &amp; IoT</span><span>QR scanning</span><span>Printers</span><span>Payments</span><span>Google Maps</span><span>WebRTC</span><span>Background services</span><span>Push notifications</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="skill-box">
+              <div class="skill-heading">
+                <span class="skill-icon"><i class="bi bi-check2-circle"></i></span>
+                <div>
+                  <h3>Quality &amp; Delivery</h3>
+                  <p>Repeatable delivery practices that keep teams aligned and releases dependable.</p>
+                </div>
+              </div>
+              <div class="skill-tags">
+                <span>Unit testing</span><span>Widget testing</span><span>Integration testing</span><span>CI/CD</span><span>Bitbucket Pipelines</span><span>GitHub Actions</span><span>Fastlane</span><span>Agile delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="skill-box">
+              <div class="skill-heading">
+                <span class="skill-icon"><i class="bi bi-stars"></i></span>
+                <div>
+                  <h3>Product &amp; AI</h3>
+                  <p>Useful intelligence and product thinking applied to real user and business needs.</p>
+                </div>
+              </div>
+              <div class="skill-tags">
+                <span>AI-assisted development</span><span>AI API integration</span><span>Conversational UX</span><span>Speech-to-text</span><span>Text-to-speech</span><span>Requirements analysis</span><span>Stakeholder collaboration</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="skill-box">
+              <div class="skill-heading">
+                <span class="skill-icon"><i class="bi bi-tools"></i></span>
+                <div>
+                  <h3>Tools &amp; Collaboration</h3>
+                  <p>Tools that support discovery, delivery, communication, and field operations.</p>
+                </div>
+              </div>
+              <div class="skill-tags">
+                <span>Git</span><span>Jira</span><span>Figma</span><span>Adobe XD</span><span>Firebase</span><span>Azure</span><span>KOBO</span><span>Power BI</span>
               </div>
             </div>
           </div>
@@ -550,7 +573,7 @@
                 <div class="portfolio-links">
                   <a href="https://play.google.com/store/apps/details?id=com.techhub.bangladesh.scibd.your_voice" target="_blank" rel="noopener"><i class="bi bi-google-play"></i> Play Store</a>
                   <a href="https://apps.apple.com/us/app/your-voice-sci/id6738484140" target="_blank" rel="noopener"><i class="bi bi-apple"></i> App Store</a>
-                  <a href="https://techhub.savethechildren.net/en/project-details-page/child-friendly-response-%28cfr%29-app" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Project Details</a>
+                  <a href="https://techhub.savethechildren.net/en/project-details-page/child-friendly-response-%28cfr%29-app" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Details</a>
                 </div>
               </div>
             </div>
@@ -576,7 +599,7 @@
                 <div class="portfolio-links">
                   <a href="https://play.google.com/store/apps/details?id=com.sci.glidego_rider" target="_blank" rel="noopener"><i class="bi bi-google-play"></i> Play Store</a>
                   <a href="https://apps.apple.com/us/app/glidego-passenger/id6767991474" target="_blank" rel="noopener"><i class="bi bi-apple"></i> App Store</a>
-                  <a href="https://techhub.savethechildren.net/en/project-details-page/glidego" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Project Details</a>
+                  <a href="https://techhub.savethechildren.net/en/project-details-page/glidego" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Details</a>
                 </div>
               </div>
             </div>
@@ -602,7 +625,7 @@
                 <div class="portfolio-links">
                   <a href="https://play.google.com/store/apps/details?id=com.sci.techhub.ondesk" target="_blank" rel="noopener"><i class="bi bi-google-play"></i> Play Store</a>
                   <a href="https://apps.apple.com/us/app/ondesk-bth/id6818030121" target="_blank" rel="noopener"><i class="bi bi-apple"></i> App Store</a>
-                  <a href="https://techhub.savethechildren.net/en/project-details-page/ondesk-bth" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Project Details</a>
+                  <a href="https://techhub.savethechildren.net/en/project-details-page/ondesk-bth" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Details</a>
                 </div>
               </div>
             </div>
@@ -624,7 +647,7 @@
                 <p>Built an internal digital child-health assessment application that helps health workers assess, classify, and refer childhood illness cases in line with IMCI guidelines across facilities and community clinics.</p>
                 <p class="portfolio-tech"><strong>Tech stack:</strong> Java, Android, SQLite, and REST APIs.</p>
                 <div class="portfolio-links">
-                  <a href="https://techhub.savethechildren.net/en/project-details-page/imci-assessment-application" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Project Details</a>
+                  <a href="https://techhub.savethechildren.net/en/project-details-page/imci-assessment-application" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Details</a>
                 </div>
               </div>
             </div>
@@ -647,7 +670,7 @@
                 <p class="portfolio-tech"><strong>Tech stack:</strong> Android, Java, BLE connectivity, printer integration, QR scanning, SQLite, and REST APIs.</p>
                 <div class="portfolio-links">
                   <a href="https://play.google.com/store/apps/details?id=scibd.rr.health.rr_health" target="_blank" rel="noopener"><i class="bi bi-google-play"></i> Play Store</a>
-                  <a href="https://techhub.savethechildren.net/en/project-details-page/emerald" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Project Details</a>
+                  <a href="https://techhub.savethechildren.net/en/project-details-page/emerald" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Details</a>
                 </div>
               </div>
             </div>
@@ -670,7 +693,7 @@
                 <p class="portfolio-tech"><strong>Tech stack:</strong> Flutter, Dart, SQFlite, and REST APIs.</p>
                 <div class="portfolio-links">
                   <a href="https://play.google.com/store/apps/details?id=com.techhub.bangladesh.scibd.frm" target="_blank" rel="noopener"><i class="bi bi-google-play"></i> Play Store</a>
-                  <a href="https://techhub.savethechildren.net/en/project-details-page/feedback-and-response-management-system" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Project Details</a>
+                  <a href="https://techhub.savethechildren.net/en/project-details-page/feedback-and-response-management-system" target="_blank" rel="noopener"><i class="bi bi-info-circle"></i> Details</a>
                 </div>
               </div>
             </div>

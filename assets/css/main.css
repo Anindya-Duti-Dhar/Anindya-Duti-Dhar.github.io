@@ -1159,38 +1159,69 @@ section,
 --------------------------------------------------------------*/
 .skills .skill-box {
   background-color: var(--surface-color);
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 84%);
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem color-mix(in srgb, var(--heading-color), transparent 94%);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skills .skill-box:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 45%);
+  box-shadow: 0 1rem 2rem color-mix(in srgb, var(--heading-color), transparent 89%);
+}
+
+.skills .skill-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.25rem;
+}
+
+.skills .skill-icon {
+  display: grid;
+  flex: 0 0 2.75rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border-radius: 0.8rem;
+  background: color-mix(in srgb, var(--accent-color), white 89%);
+  color: var(--accent-color);
+  font-size: 1.25rem;
 }
 
 .skills .skill-box h3 {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+  margin: 0 0 0.35rem;
+  color: var(--heading-color);
+  font-size: 1.12rem;
+  line-height: 1.3;
   font-weight: 600;
 }
 
 .skills .skill-box p {
-  font-size: 0.9rem;
-  margin-bottom: 0.8rem;
-  opacity: 0.6;
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
-.skills .skill-box .progress {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
-  border-radius: 50px;
-  height: 8px;
-  margin-top: 5px;
-  overflow: hidden;
+.skills .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
-.skills .skill-box .progress .progress-bar {
-  background-color: var(--accent-color);
-  height: 100%;
-  position: relative;
-  border-radius: 50px;
-  transition: 0.9s;
-  width: 1px;
+.skills .skill-tags span {
+  padding: 0.38rem 0.62rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 78%);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), transparent 96%);
+  color: color-mix(in srgb, var(--heading-color), transparent 10%);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 /*--------------------------------------------------------------
