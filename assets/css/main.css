@@ -822,102 +822,82 @@ section,
   outline-offset: 3px;
 }
 
-.hero .hero-capabilities {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
+.hero .hero-proofpoints {
+  position: relative;
   margin-top: 2rem;
+  padding-bottom: 1.45rem;
+  overflow: hidden;
 }
 
-.hero .hero-capability {
+.hero .hero-proofpoints .swiper-wrapper {
+  align-items: stretch;
+}
+
+.hero .hero-proofpoints .swiper-slide {
+  height: auto;
+}
+
+.hero .hero-proofpoint {
   display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  min-height: 3.5rem;
-  padding: 0.8rem 0.9rem;
-  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 84%);
-  border-radius: 0.9rem;
-  background-color: color-mix(in srgb, var(--surface-color), transparent 18%);
-  color: var(--heading-color);
-  font-size: 0.82rem;
-  font-weight: 600;
+  flex-direction: column;
+  min-height: 7.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 82%);
+  border-radius: 0.95rem;
+  background: color-mix(in srgb, var(--surface-color), transparent 12%);
   box-shadow: 0 0.35rem 0.8rem color-mix(in srgb, var(--heading-color), transparent 95%);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.hero .hero-capability:hover {
+.hero .hero-proofpoint:hover {
   transform: translateY(-2px);
-  border-color: color-mix(in srgb, var(--accent-color), transparent 62%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 58%);
   box-shadow: 0 0.65rem 1.1rem color-mix(in srgb, var(--heading-color), transparent 91%);
 }
 
-.hero .hero-capability span {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
+.hero .hero-proofpoint i {
+  display: inline-grid;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 0.45rem;
+  place-items: center;
+  border-radius: 0.65rem;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: 0.95rem;
 }
 
-.hero .hero-capability strong {
+.hero .hero-proofpoint strong {
   color: var(--heading-color);
-  font-size: 0.82rem;
-  line-height: 1.2;
+  font-size: 1.45rem;
+  line-height: 1.1;
 }
 
-.hero .hero-capability small {
-  color: color-mix(in srgb, var(--default-color), transparent 32%);
-  font-size: 0.7rem;
-  font-weight: 500;
+.hero .hero-proofpoint span {
+  margin-top: 0.3rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-size: 0.72rem;
+  font-weight: 600;
   line-height: 1.25;
 }
 
-.hero .hero-capability i {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 2rem;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.65rem;
-  color: var(--accent-color);
-  background-color: color-mix(in srgb, var(--accent-color), transparent 88%);
-  font-size: 1rem;
+.hero .hero-proof-pagination {
+  bottom: 0 !important;
+  line-height: 0;
 }
 
-@media (max-width: 576px) {
-  .hero .hero-capabilities {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.6rem;
-  }
+.hero .hero-proof-pagination .swiper-pagination-bullet {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin: 0 0.2rem !important;
+  background: color-mix(in srgb, var(--accent-color), transparent 62%);
+  opacity: 1;
+}
 
-  .hero .hero-capability {
-    min-height: 7rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.75rem 0.5rem;
-    text-align: center;
-  }
-
-  .hero .hero-capability i {
-    flex: 0 0 1.85rem;
-    width: 1.75rem;
-    height: 1.75rem;
-    font-size: 0.9rem;
-  }
-
-  .hero .hero-capability span {
-    align-items: center;
-    gap: 0.25rem;
-  }
-
-  .hero .hero-capability strong {
-    font-size: 0.72rem;
-  }
-
-  .hero .hero-capability small {
-    font-size: 0.64rem;
-  }
+.hero .hero-proof-pagination .swiper-pagination-bullet-active {
+  width: 1rem;
+  border-radius: 999px;
+  background: var(--accent-color);
 }
 
 .hero .hero-image {
@@ -1061,51 +1041,77 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
-.about .about-metrics {
+.about .about-capabilities {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.75rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
-.about .about-metric {
-  padding: 1rem;
+.about .about-capability {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  min-height: 6.25rem;
+  padding: 0.9rem;
   border: 1px solid color-mix(in srgb, var(--accent-color), transparent 84%);
-  border-radius: 1rem;
-  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
+  border-radius: 0.9rem;
+  background: var(--surface-color);
+  box-shadow: 0 0.35rem 0.8rem color-mix(in srgb, var(--heading-color), transparent 95%);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.about .about-metric strong,
-.about .about-metric span {
-  display: block;
+.about .about-capability:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
+  box-shadow: 0 0.65rem 1.1rem color-mix(in srgb, var(--heading-color), transparent 91%);
 }
 
-.about .about-metric strong {
-  margin-bottom: 0.35rem;
+.about .about-capability-icon {
+  display: grid;
+  flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 0.65rem;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--accent-color);
+  font-size: 0.95rem;
+}
+
+.about .about-capability h3 {
+  margin: 0 0 0.3rem;
   color: var(--heading-color);
-  font-size: 1.5rem;
-  line-height: 1;
+  font-size: 0.86rem;
+  line-height: 1.25;
 }
 
-.about .about-metric span {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-  font-size: 0.78rem;
-  line-height: 1.35;
-}
-
-@media (max-width: 1199.98px) {
-  .about .about-metrics {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.about .about-capability p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 28%);
+  font-size: 0.72rem;
+  line-height: 1.4;
 }
 
 @media (max-width: 575.98px) {
-  .about .about-metrics {
-    gap: 0.65rem;
+  .about .about-capabilities {
+    gap: 0.6rem;
   }
 
-  .about .about-metric {
-    padding: 0.85rem;
+  .about .about-capability {
+    min-height: 7rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 0.55rem;
+    text-align: center;
+  }
+
+  .about .about-capability h3 {
+    font-size: 0.74rem;
+  }
+
+  .about .about-capability p {
+    font-size: 0.66rem;
   }
 }
 

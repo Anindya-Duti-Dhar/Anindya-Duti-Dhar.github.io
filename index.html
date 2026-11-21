@@ -97,35 +97,54 @@
               <a href="#portfolio" class="btn btn-primary">View My Works <i class="bi bi-arrow-up-right"></i></a>
               <a href="https://drive.google.com/file/d/1XYp0ooiEzCHKDRdNIW13IdBTAWw2Y5g5/view?usp=sharing" target="_blank" rel="noopener" class="btn btn-outline">Download My Resume <i class="bi bi-file-earmark-arrow-down"></i></a>
             </div>
-            <div class="hero-capabilities" data-aos="fade-up" data-aos-delay="400">
-              <div class="hero-capability">
-                <i class="bi bi-phone"></i>
-                <span>
-                  <strong>Mobile Apps</strong>
-                  <small>Flutter &amp; Android</small>
-                </span>
+            <div class="hero-proofpoints swiper init-swiper" data-aos="fade-up" data-aos-delay="400" aria-label="Career highlights">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": false,
+                  "speed": 500,
+                  "spaceBetween": 12,
+                  "slidesPerView": 1.15,
+                  "pagination": {
+                    "el": ".hero-proof-pagination",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "576": { "slidesPerView": 2 },
+                    "992": { "slidesPerView": 4 }
+                  }
+                }
+              </script>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero-proofpoint">
+                    <i class="bi bi-calendar3"></i>
+                    <strong>10+</strong>
+                    <span>Years experience</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero-proofpoint">
+                    <i class="bi bi-box-seam"></i>
+                    <strong>20+</strong>
+                    <span>Products delivered</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero-proofpoint">
+                    <i class="bi bi-people"></i>
+                    <strong>50M+</strong>
+                    <span>Users reached</span>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero-proofpoint">
+                    <i class="bi bi-person-workspace"></i>
+                    <strong>10+</strong>
+                    <span>Engineers led</span>
+                  </div>
+                </div>
               </div>
-              <div class="hero-capability">
-                <i class="bi bi-diagram-3"></i>
-                <span>
-                  <strong>Architecture</strong>
-                  <small>Offline-first &amp; scalable</small>
-                </span>
-              </div>
-              <div class="hero-capability">
-                <i class="bi bi-stars"></i>
-                <span>
-                  <strong>AI Solutions</strong>
-                  <small>AI-assisted product features</small>
-                </span>
-              </div>
-              <div class="hero-capability">
-                <i class="bi bi-person-workspace"></i>
-                <span>
-                  <strong>Tech Leadership</strong>
-                  <small>Teams, CI/CD &amp; Agile</small>
-                </span>
-              </div>
+              <div class="hero-proof-pagination swiper-pagination"></div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -174,23 +193,35 @@
 
               <p class="lead mb-4">I build production-grade mobile products using Flutter and native Android with Kotlin for telecom, fintech, commerce, health, education, and consumer platforms. With 10+ years of experience, I have led mobile delivery across 25+ countries, shaped scalable architectures, improved real-device performance, and guided cross-functional teams to ship reliable, user-centric applications.</p>
 
-              <div class="about-metrics" aria-label="Career highlights">
-                <div class="about-metric">
-                  <strong>10+</strong>
-                  <span>Years experience</span>
-                </div>
-                <div class="about-metric">
-                  <strong>20+</strong>
-                  <span>Products delivered</span>
-                </div>
-                <div class="about-metric">
-                  <strong>50M+</strong>
-                  <span>Users reached</span>
-                </div>
-                <div class="about-metric">
-                  <strong>10+</strong>
-                  <span>Engineers led</span>
-                </div>
+              <div class="about-capabilities" aria-label="Core capabilities">
+                <article class="about-capability">
+                  <span class="about-capability-icon"><i class="bi bi-phone"></i></span>
+                  <div>
+                    <h3>Mobile Product Engineering</h3>
+                    <p>Flutter and native Android products built for real users and reliable delivery.</p>
+                  </div>
+                </article>
+                <article class="about-capability">
+                  <span class="about-capability-icon"><i class="bi bi-diagram-3"></i></span>
+                  <div>
+                    <h3>Offline-First Architecture</h3>
+                    <p>Scalable systems that stay useful across field, device, and network conditions.</p>
+                  </div>
+                </article>
+                <article class="about-capability">
+                  <span class="about-capability-icon"><i class="bi bi-stars"></i></span>
+                  <div>
+                    <h3>AI-Powered Solutions</h3>
+                    <p>Practical AI features, conversational flows, and intelligent product experiences.</p>
+                  </div>
+                </article>
+                <article class="about-capability">
+                  <span class="about-capability-icon"><i class="bi bi-person-workspace"></i></span>
+                  <div>
+                    <h3>Technical Leadership</h3>
+                    <p>Architecture direction, CI/CD, and guidance for focused mobile teams.</p>
+                  </div>
+                </article>
               </div>
 
               <!--<div class="signature mt-4">
