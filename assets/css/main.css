@@ -823,18 +823,10 @@ section,
 }
 
 .hero .hero-proofpoints {
-  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
   margin-top: 2rem;
-  padding-bottom: 1.45rem;
-  overflow: hidden;
-}
-
-.hero .hero-proofpoints .swiper-wrapper {
-  align-items: stretch;
-}
-
-.hero .hero-proofpoints .swiper-slide {
-  height: auto;
 }
 
 .hero .hero-proofpoint {
@@ -856,6 +848,7 @@ section,
 }
 
 .hero .hero-proofpoint i {
+  align-self: center;
   display: inline-grid;
   width: 2rem;
   height: 2rem;
@@ -881,23 +874,10 @@ section,
   line-height: 1.25;
 }
 
-.hero .hero-proof-pagination {
-  bottom: 0 !important;
-  line-height: 0;
-}
-
-.hero .hero-proof-pagination .swiper-pagination-bullet {
-  width: 0.4rem;
-  height: 0.4rem;
-  margin: 0 0.2rem !important;
-  background: color-mix(in srgb, var(--accent-color), transparent 62%);
-  opacity: 1;
-}
-
-.hero .hero-proof-pagination .swiper-pagination-bullet-active {
-  width: 1rem;
-  border-radius: 999px;
-  background: var(--accent-color);
+@media (max-width: 991px) {
+  .hero .hero-proofpoints {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 .hero .hero-image {
